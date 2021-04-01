@@ -1,0 +1,31 @@
+ext {
+    // FIXME replace with yours
+    moduleId = "template"
+    moduleName = "Template"
+    moduleAuthor = "Template"
+    moduleDescription = "Riru module template."
+    moduleVersion = "v1.0"
+    moduleVersionCode = 1
+
+    moduleMinRiruApiVersion = 9
+    moduleMinRiruVersionName = "v22.0"
+    moduleRiruApiVersion = 10
+
+    moduleProp = [
+            name       : moduleName,
+            version    : moduleVersion,
+            versionCode: moduleVersionCode.toString(),
+            author     : moduleAuthor,
+            description: moduleDescription,
+            minApi     : moduleMinRiruApiVersion
+    ]
+
+    magiskModuleProp = [
+            id         : "riru-${moduleId.replace('_', '-')}",
+            name       : "Riru - ${moduleProp['name']}",
+            version    : moduleProp['version'],
+            versionCode: moduleProp['versionCode'],
+            author     : moduleProp['author'],
+            description: moduleProp['description']
+    ]
+}

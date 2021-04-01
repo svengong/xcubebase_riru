@@ -1,0 +1,17 @@
+*.iml
+.gradle
+/local.properties
+.idea
+/.idea/caches/build_file_checksums.ser
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+.DS_Store
+/build
+/captures
+/out
+.externalNativeBuild
+.cxx
+module.gradle
+/module/src/main/cpp/arm64-v8a
+/module/src/main/cpp/armeabi-v7a
